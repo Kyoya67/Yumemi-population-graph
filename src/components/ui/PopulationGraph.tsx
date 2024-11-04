@@ -12,14 +12,17 @@ interface PopulationData {
     }[];
 }
 
+type PopulationType = '総人口' | '年少人口' | '生産年齢人口' | '老年人口';
+
 interface PopulationGraphProps {
     populationData: PopulationData[];
+    populationType: PopulationType;
 }
 
-export const PopultionGraph = ({ populationData }: PopulationGraphProps) => {
+export const PopultionGraph = ({ populationData, populationType }: PopulationGraphProps) => {
     const options: Highcharts.Options = {
         title: {
-            text: '都道府県別の総人国推移'
+            text: `${populationType}の推移`
         },
         xAxis: {
             title: {
