@@ -1,4 +1,3 @@
-
 import { PrefectureList } from '../components/features/PrefectureList';
 
 export default function Hom() {
@@ -7,5 +6,5 @@ export default function Hom() {
       <h1>都道府県別人口推移グラフ</h1>
       <PrefectureList />
     </main>
-  )
+  );
 }
