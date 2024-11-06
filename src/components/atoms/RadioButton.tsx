@@ -7,7 +7,7 @@ interface RadioButtonProps {
 }
 
 export const RadioButton = ({ value, checked, onChange, disabled, label }: RadioButtonProps) => (
-    <label style={{ marginRight: '15px' }}>
+    <label className="mr-4">
         <input
             type="radio"
             value={value}

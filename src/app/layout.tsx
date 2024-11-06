@@ -1,3 +1,5 @@
+import './globals.css'  // またはあなたのCSSファイルのパス
+
 type LayoutProps = {
   children: React.ReactNode;
 };

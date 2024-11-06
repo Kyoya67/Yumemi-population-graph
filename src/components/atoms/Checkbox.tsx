@@ -5,12 +5,12 @@ interface CheckboxProps {
 }
 
 export const Checkbox = ({ onChange, disabled, label }: CheckboxProps) => (
-    <label style={{ display: 'flex', alignItems: 'center', padding: '5px' }}>
+    <label className="flex items-center p-1">
         <input
             type="checkbox"
             onChange={(e) => onChange(e.target.checked)}
             disabled={disabled}
         />
-        <span style={{ marginLeft: '5px' }}>{label}</span>
+        <span className="ml-1">{label}</span>
     </label>
 );
