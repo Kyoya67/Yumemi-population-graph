@@ -1,5 +1,5 @@
 const API_ENDPOINT = 'https://yumemi-frontend-engineer-codecheck-api.vercel.app/api/v1';
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY || '8FzX5qLmN3wRtKjH7vCyP9bGdEaU4sYpT6cMfZnJ';
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY || 'undefined';
 
 export const fetchPrefectures = async () => {
   try {
