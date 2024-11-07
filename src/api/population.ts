@@ -1,26 +1,7 @@
+import { PopulationResponse } from '@/components/types';
+
 const API_ENDPOINT = 'https://yumemi-frontend-engineer-codecheck-api.vercel.app/api/v1';
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY || 'undefined';
-
-interface PopulationData {
-  year: number;
-  value: number;
-  rate?: number;
-}
-
-interface PopulationCompositionData {
-  label: string;
-  data: PopulationData[];
-}
-
-interface PopulationResult {
-  label: string;
-  data: PopulationCompositionData[];
-}
-
-interface PopulationResponse {
-  message: null;
-  result: PopulationResult;
-}
 
 export const fetchPopulation = async (prefCode: number): Promise<PopulationResponse> => {
   try {

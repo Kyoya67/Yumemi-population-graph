@@ -1,7 +1,7 @@
-"use client"
+'use client';
 import { useEffect, useState } from 'react';
-import { fetchPrefectures } from '../api/prefectures';
-import { Prefecture } from '../components/types';
+import { fetchPrefectures } from '@/api/prefectures';
+import { Prefecture } from '@/components/types';
 
 export const usePrefectures = () => {
     const [prefectures, setPrefectures] = useState<Prefecture[]>([]);

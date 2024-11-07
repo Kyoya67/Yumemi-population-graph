@@ -1,4 +1,4 @@
-import './globals.css'  // またはあなたのCSSファイルのパス
+import './globals.css';
 
 type LayoutProps = {
   children: React.ReactNode;

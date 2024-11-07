@@ -1,5 +1,5 @@
-import { Checkbox } from '../atoms/Checkbox';
-import { Prefecture } from '../types';
+import { Checkbox } from '@/components/atoms/Checkbox';
+import { Prefecture } from '@/components/types';
 
 interface PrefectureCheckboxGroupProps {
     prefectures: Prefecture[];

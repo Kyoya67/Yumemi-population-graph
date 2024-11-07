@@ -1,15 +1,11 @@
-import { fetchPopulation } from '@/api/population';
-import { PopulationData } from '@/components/types';
+import { fetchPrefectures } from '@/api/prefectures';
 
-describe('fetchPopulation', () => {
-    const mockPrefCode = 1;
-    const mockResponse: PopulationData = {
-        prefName: 'Tokyo',
-        data: [
-            { year: 2020, value: 100000 },
-            { year: 2021, value: 101000 },
-        ],
-    };
+describe('fetchPrefectures', () => {
+    const mockResponse = [
+        { prefCode: 1, prefName: 'Hokkaido' },
+        { prefCode: 2, prefName: 'Aomori' },
+        { prefCode: 3, prefName: 'Iwate' },
+    ];
 
     beforeEach(() => {
         global.fetch = jest.fn(() =>
@@ -24,11 +20,11 @@ describe('fetchPopulation', () => {
         jest.clearAllMocks();
     });
 
-    it('should fetch population data successfully', async () => {
-        const result = await fetchPopulation(mockPrefCode);
+    it('should fetch prefectures data successfully', async () => {
+        const result = await fetchPrefectures();
         expect(result).toEqual(mockResponse);
         expect(fetch).toHaveBeenCalledWith(
-            `https://yumemi-frontend-engineer-codecheck-api.vercel.app/api/v1/population/composition/perYear?prefCode=${mockPrefCode}`,
+            'https://yumemi-frontend-engineer-codecheck-api.vercel.app/api/v1/prefectures',
             {
                 headers: {
                     'X-API-KEY': process.env.NEXT_PUBLIC_API_KEY || 'undefined',
@@ -42,6 +38,6 @@ describe('fetchPopulation', () => {
             Promise.resolve({ ok: false, status: 404 })
         );
 
-        await expect(fetchPopulation(mockPrefCode)).rejects.toThrow('Failed to fetch population: 404');
+        await expect(fetchPrefectures()).rejects.toThrow('Failed to fetch prefectures: 404');
     });
 });

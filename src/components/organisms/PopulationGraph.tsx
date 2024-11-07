@@ -1,6 +1,6 @@
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import { PopulationData, PopulationType } from "../types";
+import { PopulationData, PopulationType } from '@/components/types';
 
 interface PopulationGraphProps {
     populationData: PopulationData[];

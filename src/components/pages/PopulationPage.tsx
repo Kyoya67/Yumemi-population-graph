@@ -1,10 +1,10 @@
-"use client"
+'use client';
 
-import { PopulationTypeSelector } from '../molecules/PopulationTypeSelector';
-import { PrefectureCheckboxGroup } from '../molecules/PrefectureCheckboxGroup';
-import { PopulationGraph } from '../organisms/PopulationGraph';
-import { PopulationAnalysisTemplate } from '../template/PopulationAnalysisTemplate';
-import { usePopulationData } from '../../hooks/usePopulationData';
+import { PopulationTypeSelector } from '@/components/molecules/PopulationTypeSelector';
+import { PrefectureCheckboxGroup } from '@/components/molecules/PrefectureCheckboxGroup';
+import { PopulationGraph } from '@/components/organisms/PopulationGraph';
+import { PopulationAnalysisTemplate } from '@/components/template/PopulationAnalysisTemplate';
+import { usePopulationData } from '@/hooks/usePopulationData';
 
 export const PopulationPage = () => {
     const {

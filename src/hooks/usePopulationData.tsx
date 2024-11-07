@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { fetchPopulation } from '../api/population';
-import { usePrefectures } from './usePrefectures';
-import { PopulationType, PopulationData } from '../components/types'
+import { fetchPopulation } from '@/api/population';
+import { usePrefectures } from '@/hooks/usePrefectures';
+import { PopulationType, PopulationData } from '@/components/types';
 
 export const usePopulationData = () => {
     const { prefectures, error: prefecturesError } = usePrefectures();
