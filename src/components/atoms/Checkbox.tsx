@@ -1,8 +1,4 @@
-interface CheckboxProps {
-    onChange: (checked: boolean) => void;
-    disabled?: boolean;
-    label: string;
-}
+import { CheckboxProps } from '@/components/types';
 
 export const Checkbox = ({ onChange, disabled, label }: CheckboxProps) => (
     <label className="flex items-center p-1">

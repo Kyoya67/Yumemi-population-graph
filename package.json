@@ -14,7 +14,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "highcharts": "^11.4.8",
     "highcharts-react-official": "^3.2.1",
@@ -25,6 +24,7 @@
     "recharts": "^2.13.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__template": "^7.4.4",
     "@types/babel__traverse": "^7.20.6",

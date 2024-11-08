@@ -1,12 +1,6 @@
 import { RadioButton } from '@/components/atoms/RadioButton';
-
-type PopulationType = '総人口' | '年少人口' | '生産年齢人口' | '老年人口';
-
-interface PopulationTypeSelectorProps {
-    selectedType: PopulationType;
-    onChange: (type: PopulationType) => void;
-    disabled?: boolean;
-}
+import { PopulationType } from '@/components/types';
+import { PopulationTypeSelectorProps } from '@/components/types';
 
 export const PopulationTypeSelector = ({
     selectedType,

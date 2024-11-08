@@ -1,11 +1,6 @@
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import { PopulationData, PopulationType } from '@/components/types';
-
-interface PopulationGraphProps {
-    populationData: PopulationData[];
-    populationType: PopulationType;
-}
+import { PopulationGraphProps } from '@/components/types';
 
 export const PopulationGraph = ({ populationData, populationType }: PopulationGraphProps) => {
     const options: Highcharts.Options = {

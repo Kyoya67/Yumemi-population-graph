@@ -1,11 +1,5 @@
 import { Checkbox } from '@/components/atoms/Checkbox';
-import { Prefecture } from '@/components/types';
-
-interface PrefectureCheckboxGroupProps {
-    prefectures: Prefecture[];
-    onPrefectureChange: (prefectureCode: number, prefectureName: string, checked: boolean) => void;
-    disabled?: boolean;
-}
+import { PrefectureCheckboxGroupProps } from '@/components/types';
 
 export const PrefectureCheckboxGroup = ({
     prefectures,

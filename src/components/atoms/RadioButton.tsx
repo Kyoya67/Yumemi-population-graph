@@ -1,10 +1,4 @@
-interface RadioButtonProps {
-    value: string;
-    checked: boolean;
-    onChange: () => void;
-    disabled?: boolean;
-    label: string;
-}
+import { RadioButtonProps } from '@/components/types';
 
 export const RadioButton = ({ value, checked, onChange, disabled, label }: RadioButtonProps) => (
     <label className="mr-4">

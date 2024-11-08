@@ -1,6 +1,4 @@
-interface PopulationAnalysisTemplateProps {
-    children: React.ReactNode;
-}
+import { PopulationAnalysisTemplateProps } from "@/components/types";
 
 export const PopulationAnalysisTemplate = ({ children }: PopulationAnalysisTemplateProps) => (
     <div>
