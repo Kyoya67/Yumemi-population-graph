@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { PopulationTypeSelector } from '@/components/molecules/PopulationTypeSelector';
 import { PrefectureCheckboxGroup } from '@/components/molecules/PrefectureCheckboxGroup';
 import { PopulationGraph } from '@/components/organisms/PopulationGraph';

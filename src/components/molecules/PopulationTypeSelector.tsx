@@ -1,3 +1,4 @@
+import React from 'react';
 import { RadioButton } from '@/components/atoms/RadioButton';
 import { PopulationType } from '@/components/types';
 import { PopulationTypeSelectorProps } from '@/components/types';

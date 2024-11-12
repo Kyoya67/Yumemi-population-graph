@@ -1,3 +1,4 @@
+import React from 'react';
 import { PopulationPage } from '@/components/pages/PopulationPage';
 
 export default function Home() {
