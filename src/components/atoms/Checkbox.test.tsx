@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Checkbox } from './Checkbox';
+import { Checkbox } from '@/components/atoms/Checkbox';
 
 describe('Checkbox', () => {
     const defaultProps = {

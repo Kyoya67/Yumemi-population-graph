@@ -7,7 +7,7 @@ export const RadioButton = ({ value, checked, onChange, disabled, label }: Radio
             type="radio"
             value={value}
             checked={checked}
-            onChange={onChange}
+            onChange={() => !disabled && onChange()}
             disabled={disabled}
         />
         {label}
