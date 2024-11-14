@@ -4,7 +4,7 @@ import React from 'react';
 import { PopulationTypeSelector } from '@/components/molecules/PopulationTypeSelector';
 import { PrefectureCheckboxGroup } from '@/components/molecules/PrefectureCheckboxGroup';
 import { PopulationGraph } from '@/components/organisms/PopulationGraph';
-import { PopulationAnalysisTemplate } from '@/components/template/PopulationAnalysisTemplate';
+import { PopulationAnalysisTemplate } from '@/components/templates/PopulationAnalysisTemplate';
 import { usePopulationData } from '@/hooks/usePopulationData';
 
 export const PopulationPage = () => {
