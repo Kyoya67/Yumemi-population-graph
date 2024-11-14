@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrefectureCheckboxGroup matches snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-wrap gap-2 mb-5"
+  >
+    <label
+      class="flex items-center p-1 cursor-pointer"
+    >
+      <input
+        class="cursor-inherit"
+        type="checkbox"
+      />
+      <span
+        class="ml-1"
+      >
+        北海道
+      </span>
+    </label>
+    <label
+      class="flex items-center p-1 cursor-pointer"
+    >
+      <input
+        class="cursor-inherit"
+        type="checkbox"
+      />
+      <span
+        class="ml-1"
+      >
+        東京都
+      </span>
+    </label>
+    <label
+      class="flex items-center p-1 cursor-pointer"
+    >
+      <input
+        class="cursor-inherit"
+        type="checkbox"
+      />
+      <span
+        class="ml-1"
+      >
+        大阪府
+      </span>
+    </label>
+  </div>
+</div>
+`;

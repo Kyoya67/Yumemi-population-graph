@@ -5,6 +5,9 @@ import { PopulationGraphProps } from '@/components/types';
 
 export const PopulationGraph = ({ populationData, populationType }: PopulationGraphProps) => {
     const options: Highcharts.Options = {
+        accessibility: {
+            enabled: false,  // アクセシビリティ警告を無効化
+        },
         title: {
             text: `${populationType}の推移`,
         },
@@ -55,3 +58,4 @@ export const PopulationGraph = ({ populationData, populationType }: PopulationGr
         </div>
     );
 };
+
