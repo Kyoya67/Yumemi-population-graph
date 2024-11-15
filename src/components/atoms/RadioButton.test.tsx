@@ -38,7 +38,7 @@ describe('Radiobutton', () => {
 
         const radioInput = screen.getByRole('radio');
         expect(radioInput).not.toBeChecked();
-    })
+    });
 
     it('calls onChange handler when clicked', () => {
         const handleChange = jest.fn();
