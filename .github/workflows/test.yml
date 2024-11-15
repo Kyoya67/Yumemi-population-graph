@@ -1,0 +1,38 @@
+name: API and Graph Test Workflow
+
+on:
+  push:
+    branches:
+      - main  # mainブランチにpushされたときに実行される
+  pull_request:
+    branches:
+      - main  # mainブランチに対するPR時に実行される
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # GitHub Actionsの実行環境
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # リポジトリのコードをチェックアウト
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Node.jsの設定
+        with:
+          node-version: '18'  # 必要なNode.jsのバージョン
+
+      - name: Install dependencies
+        run: npm install  # 必要な依存関係をインストール
+
+      - name: Run tests
+        run: npm test  # テストを実行（ユニットテストやAPIのテスト）
+
+      - name: Lint code
+        run: npm run lint  # コードのリンティング
+
+      - name: Build project
+        run: npm run build  # プロダクトをビルド
+
+      - name: Deploy to production
+        run: npm run deploy  # 本番環境にデプロイ（もしCI環境でデプロイが必要なら）
+
