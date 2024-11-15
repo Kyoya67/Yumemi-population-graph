@@ -1,6 +1,5 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import userEvent from '@testing-library/user-event';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { PopulationTypeSelector } from '@/components/molecules/PopulationTypeSelector'; // コンポーネントのインポート
 import { PopulationType } from '@/components/types'; // 型のインポート
@@ -108,7 +107,7 @@ describe('PopulationTypeSelector', () => {
         render(<PopulationTypeSelector {...defaultProps} />);
 
         const firstRadio = screen.getByLabelText('総人口');
-        const secondRadio = screen.getByLabelText('年少人口');
+        // const secondRadio = screen.getByLabelText('年少人口');
 
         // Tabキーでのフォーカス移動をシミュレート
         firstRadio.focus();
