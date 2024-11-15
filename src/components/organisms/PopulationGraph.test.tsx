@@ -48,14 +48,14 @@ describe('PopulationGraph', () => {
         const { container } = render(
             <PopulationGraph populationData={mockPopulationData} populationType={mockPopulationType} />
         );
-        expect(container.querySelector('.highcharts-container')).toBeInTheDocument();
+        expect(container.querySelector('.highcharts-container')).toBeVisible();
     });
 
     it('sets the correct title based on populationType', () => {
         const { getByText } = render(
             <PopulationGraph populationData={mockPopulationData} populationType={mockPopulationType} />
         );
-        expect(getByText('総人口の推移')).toBeInTheDocument();
+        expect(getByText('総人口の推移')).toBeVisible();
     });
 
     it('sets the x-axis categories based on populationData', () => {

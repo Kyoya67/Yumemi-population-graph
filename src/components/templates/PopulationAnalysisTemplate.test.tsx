@@ -12,7 +12,7 @@ describe('PopulationAnalysisTemplate', () => {
         );
 
         // 'Test Child Element' がレンダリングされていることを確認
-        expect(getByText('Test Child Element')).toBeInTheDocument();
+        expect(getByText('Test Child Element')).toBeVisible();
     });
 
     it('renders nothing when no children are passed', () => {

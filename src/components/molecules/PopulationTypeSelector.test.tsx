@@ -21,12 +21,12 @@ describe('PopulationTypeSelector', () => {
         render(<PopulationTypeSelector {...defaultProps} />);
 
         // ヘッダーテキストの確認
-        expect(screen.getByText('表示する人口データ')).toBeInTheDocument();
+        expect(screen.getByText('表示する人口データ')).toBeVisible();
 
         // すべての選択肢が表示されていることを確認
         const populationTypes: PopulationType[] = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
         populationTypes.forEach(type => {
-            expect(screen.getByLabelText(type)).toBeInTheDocument();
+            expect(screen.getByLabelText(type)).toBeVisible();
         });
     });
 
@@ -87,7 +87,7 @@ describe('PopulationTypeSelector', () => {
 
         // ラジオボタングループのスタイリング
         const radioGroupDiv = container.querySelector('.space-y-2');
-        expect(radioGroupDiv).toBeInTheDocument();
+        expect(radioGroupDiv).toBeVisible();
     });
 
     it('maintains selected state when rerendering', () => {

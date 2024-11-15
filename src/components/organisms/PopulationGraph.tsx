@@ -53,7 +53,7 @@ export const PopulationGraph = ({ populationData, populationType }: PopulationGr
     };
 
     return (
-        <div>
+        <div data-testid="population-graph">
             <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
     );
